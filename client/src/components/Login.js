@@ -21,7 +21,7 @@ const Login = props => {
       .post("http://localhost:5000/api/login", user.credentials)
       .then(response => {
         localStorage.setItem("token", response.data.payload);
-        props.history.push("/protected");
+        props.history.push("/homepage");
       })
       .catch(error => console.log(error.response));
   };
