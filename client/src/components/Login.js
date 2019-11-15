@@ -25,6 +25,7 @@ const Login = props => {
       })
       .catch(error => console.log(error.response));
   };
+
   return (
     <>
       <h1>Welcome to the Bubble App!</h1>
